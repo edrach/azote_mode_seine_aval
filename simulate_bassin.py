@@ -30,7 +30,7 @@ def is_summer(dates):
 
 
 def load_inputs(data_dir):
-    flow = pd.read_csv(data_dir / "debit_SAV_2022.csv", parse_dates=["date"])
+    flow = pd.read_csv(data_dir / "Debit_SAV_2022.csv", parse_dates=["date"])
     in_conc = pd.read_csv(data_dir / "concentration_entree_SAV.csv", parse_dates=["date"])
     summer_curve = pd.read_csv(data_dir / "concentration_sortie_SAV_estivale.csv")
     winter_curve = pd.read_csv(data_dir / "concentration_sortie_SAV_hivernale.csv")
